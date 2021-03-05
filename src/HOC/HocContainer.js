@@ -23,11 +23,9 @@ import UserProfile from "./UserProfile";
 const HocContainer = () => {
   return (
     <div className="App">
-      <h2>POST</h2>
-      <UserPost />
+      <UserPost title="USER POST" source="posts" />
       <hr />
-      <h2>PROFILE</h2>
-      <UserProfile />
+      <UserProfile title="USER PROFILE" source="users" />
     </div>
   );
 };
