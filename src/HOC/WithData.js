@@ -16,7 +16,7 @@ const WithData = (Component) => {
         setData(data.slice(0, 2));
       }
       fetchData();
-    }, []);
+    }, [source]);
 
     return (
       <div>
