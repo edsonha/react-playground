@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Child from "./Child";
+import CustomizedContext from "./Context";
 
 const ContextContainer = () => {
   const [user, setUser] = useState([]);
@@ -15,18 +16,25 @@ const ContextContainer = () => {
     fetchData();
   }, []);
 
-  const userData = (
-    <div>
-      <h1>Profile</h1>
-      name: {user.name}
-      <br />
-      username: {user.username}
-      <br />
-      email: {user.email}
-    </div>
-  );
+  // const userData = (
+  //   <div>
+  //     <h1>Profile</h1>
+  //     name: {user.name}
+  //     <br />
+  //     username: {user.username}
+  //     <br />
+  //     email: {user.email}
+  //   </div>
+  // );
 
-  return <Child userData={userData} />;
+  // Before Context
+  // return <Child userData={userData} />;
+
+  return (
+    <CustomizedContext.Provider value={user}>
+      <Child />
+    </CustomizedContext.Provider>
+  );
 };
 
 export default ContextContainer;

@@ -1,5 +1,9 @@
 import Grandchild from "./Grandchild";
 
-const Child = (props) => <Grandchild {...props} />;
+// Before Context
+// const Child = (props) => <Grandchild {...props} />;
+
+// With Context - no need for props drilling
+const Child = () => <Grandchild />;
 
 export default Child;
