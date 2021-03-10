@@ -1,6 +1,7 @@
 // import HocContainer from "./HOC/HocContainer";
 // import ContextContainer from "./Context/ContextContainer";
 import ContextProviderPattern from "./ContextProviderPattern/ContextProviderPattern";
+import ContextProvider from "./ContextProviderPattern/context";
 import "./App.css";
 
 const App = () => {
@@ -8,7 +9,9 @@ const App = () => {
     <div className="App">
       {/* <HocContainer /> */}
       {/* <ContextContainer /> */}
-      <ContextProviderPattern />
+      <ContextProvider>
+        <ContextProviderPattern />
+      </ContextProvider>
     </div>
   );
 };

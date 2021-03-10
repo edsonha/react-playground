@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import MyContext from "./context";
+import { MyContext } from "./context";
 
 const IconChild = () => {
   const { toggleHidden } = useContext(MyContext);

@@ -1,8 +1,18 @@
-import { createContext } from "react";
+import { useState, createContext } from "react";
 
-const MyContext = createContext({
+export const MyContext = createContext({
   hidden: true,
   toggleHidden: () => {},
 });
 
-export default MyContext;
+const ContextProvider = ({ children }) => {
+  const [hidden, setHidden] = useState(true);
+  const toggleHidden = () => setHidden(!hidden);
+
+  return (
+    <MyContext.Provider value={{ hidden, toggleHidden }}>
+      {children}
+    </MyContext.Provider>
+  );
+};
+export default ContextProvider;
