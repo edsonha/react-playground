@@ -2,7 +2,8 @@
 // import ContextContainer from "./Context/ContextContainer";
 // import ContextProviderPattern from "./ContextProviderPattern/ContextProviderPattern";
 // import ContextProvider from "./ContextProviderPattern/context";
-import ComponentWillUnmount from "./CWU/CWUContainer";
+// import ComponentWillUnmount from "./CWU/CWUContainer";
+import CustomHook from "./CustomHook/CustomHook";
 import "./App.css";
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
       {/* <ContextProvider>
         <ContextProviderPattern />
       </ContextProvider> */}
-      <ComponentWillUnmount />
+      {/* <ComponentWillUnmount /> */}
+      <CustomHook />
     </div>
   );
 };
