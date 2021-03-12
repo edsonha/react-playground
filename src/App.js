@@ -3,7 +3,8 @@
 // import ContextProviderPattern from "./ContextProviderPattern/ContextProviderPattern";
 // import ContextProvider from "./ContextProviderPattern/context";
 // import ComponentWillUnmount from "./CWU/CWUContainer";
-import CustomHook from "./CustomHook/CustomHook";
+// import CustomHook from "./CustomHook/CustomHook";
+import ReducerHook from "./ReducerHook/ReducerHook";
 import "./App.css";
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
         <ContextProviderPattern />
       </ContextProvider> */}
       {/* <ComponentWillUnmount /> */}
-      <CustomHook />
+      {/* <CustomHook /> */}
+      <ReducerHook />
     </div>
   );
 };
