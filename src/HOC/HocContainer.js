@@ -19,6 +19,7 @@
 //withHook
 import UserPost from "./UserPost";
 import UserProfile from "./UserProfile";
+import Extra from "./Extra";
 
 const HocContainer = () => {
   return (
@@ -26,6 +27,8 @@ const HocContainer = () => {
       <UserPost title="USER POST" source="posts" />
       <hr />
       <UserProfile title="USER PROFILE" source="users" />
+      <hr />
+      <Extra title="EXTRA COMPONENT" source="extra" />
     </div>
   );
 };
